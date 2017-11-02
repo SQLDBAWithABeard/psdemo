@@ -1,1 +1,1 @@
-docker build . --rm -t tools:sqlps
+docker build . --rm -t ericskang/tools:sqlps

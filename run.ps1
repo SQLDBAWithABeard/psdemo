@@ -1,1 +1,1 @@
-docker run --name sqlps -d tools:sqlps tail -f /dev/null
+docker run --name sqlps -d ericskang/tools:sqlps tail -f /dev/null
