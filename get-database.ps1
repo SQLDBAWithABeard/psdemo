@@ -31,7 +31,7 @@ Add-Type -Path (Join-Path $smopath       Microsoft.SqlServer.ConnectionInfo.dll)
 #    Microsoft.SqlServer.Management.Common.ServerConnection (the overload that takes a SecureString)
 # we have to use clear-text user/password. DO NOT DO IN PRODUCTION CODE!
 #
-$connStr = "Data Source=localhost;Persist Security Info=True;User ID=sa;Password=SqlDevOps2017"
+$connStr = "Data Source=mssql;Persist Security Info=True;User ID=sa;Password=SqlDevOps2017"
 
 # See comment above. This could be a lot simpler and more secure...
 $sqlconn = New-Object System.Data.SqlClient.SqlConnection $connStr
