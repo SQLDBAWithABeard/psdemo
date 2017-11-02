@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install -y \
     && dpkg -i powershell_6.0.0-beta.9-1.debian.8_amd64.deb \
     && apt-get install -f \
     && apt-get clean \
-    pwsh ./get-smocore.ps1 \
+    && pwsh ./get-smocore.ps1 \
     && rm ./powershell_6.0.0-beta.9-1.debian.8_amd64.deb
